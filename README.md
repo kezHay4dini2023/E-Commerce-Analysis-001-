@@ -57,7 +57,7 @@ df['Unit Cost'] = round(df['Unit Price'] - (df['Profit'] / df['Quantity']),2)
 ```
 <br>
 <div align='center'>
-Now we can powerBi and create measures along with it. <p>
+Now we can use powerBi and create measures along with it. <p>
 <br> Request 1: Executive Pulse Check (Is the business healthy?)
 to see that the business is healthy we have to look at the sum of profit annually and quarterly. 
 </div>
@@ -103,5 +103,5 @@ Request 4: Payment Preferences (Transaction Efficiency)
   <img src="images\payment mode chart.png" alt="pie chart payment mode" width="100%">
 </p>
 <div align='center'>
-at the payment mode. the distribution of payment mode are almost all rounding to the same value. Comparing to real world scenario. This can be further from the truth. UPI and COD usually dominates the mode of payment. My theory is that the making of this dataset is they used Uniform Random Distribution.  
+at the payment mode pie chart. the quantity distribution of payment mode category are almost all rounding to the same value. Comparing to real world scenario. This can be further from the truth. UPI and COD usually dominates the mode of payment. My theory is that the making of this dataset is they used Uniform Random Distribution.  
 </div>
