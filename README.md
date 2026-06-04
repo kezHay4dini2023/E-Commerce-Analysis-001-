@@ -3,6 +3,11 @@
 <p align="center">
   <img src="images\dashboard.png" alt="Dashboard" width="100%">
 </p>
+<br>
+<div>
+<p> Executive Summary & Data Insights </p>
+By transforming the e-commerce sales dataset using Python for engineered features—specifically constructing a missing `Unit Cost` variable to evaluate true margins—and building an interactive Power BI dashboard, several key operational patterns were identified. While annual and quarterly performance initially indicates an average 15% profit margin stability, an exhaustive look reveals a steep decline in profitability and Average Order Value (AOV) in the final quarter of 2025, alongside an incomplete data capture for the end-of-year period. Regional distribution highlights Lucknow, Guwahati, and Bangalore as the primary profit-driving expansion targets, whereas underperforming sectors like Coimbatore and Hyderabad require operational review. Most notably, an objective critical analysis of the data structures strongly suggests the data was generated via a Uniform Random Distribution; the absence of negative profit outcomes under high discounting structures (the "Discount Trap") and the perfectly equal split among payment preferences <strong> deviate heavily from real-world e-commerce dynamics </strong>, where UPI/COD dominantly saturate markets and aggressive discounting regularly triggers severe margin losses.
+</div> <br>
 
 <div align='center'>
 The <a href="https://www.kaggle.com/datasets/prince7489/e-commerce-sales">E commerce Sales Dataset</a> is a synthetic dataset but a realistic sample of the e commerce sales data of online shops. I am going to analyze the data and transform it into an analytical dashboard to see what are some lucrative key performance findings that are essential to improving company performance.  
