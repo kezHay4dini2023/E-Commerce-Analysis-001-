@@ -48,7 +48,7 @@ We see that the data does not have missing or null values.
 </p>
 <br>
 <div align='center'>
-We see that there is the unit price Unit Price (what the customer paid) and Profit (what the company kept), but it doesn't explicitly state how much it actually cost the company to manufacture or acquire the product. So there is a need to add the cost of the unit.
+We see that there is the Unit Price (what the customer paid) and Profit (what the company kept), but it doesn't explicitly state how much it actually cost the company to manufacture or acquire the product. So there is a need to add the cost of the unit (Unit Cost).
  </div>
 
 ```python
@@ -57,7 +57,8 @@ df['Unit Cost'] = round(df['Unit Price'] - (df['Profit'] / df['Quantity']),2)
 ```
 <br>
 <div align='center'>
-now we that the first request is: <br> Request 1: Executive Pulse Check (Is the business healthy?)
+Now we can powerBi and create measures along with it. <p>
+<br> Request 1: Executive Pulse Check (Is the business healthy?)
 to see that the business is healthy we have to look at the sum of profit annually and quarterly. 
 </div>
 <br
@@ -66,26 +67,26 @@ to see that the business is healthy we have to look at the sum of profit annuall
 </p>
 <br>
 <div align='center'> 
-We see that profits are stable but are not growing. In the final quarter. There is only small set of data that didn’t fully cover the full 4th quarter. It 10 rows of data in October. No more in November, and December. <br>
-Looking at the profit margin we see that profits are stable. Which were around 15 percent but then dipped as of the final quarter of 2025 it dipped. 
+We see that profits are stable but aren't growing. In the final quarter. There is only small set of data that didn’t fully cover the full 4th quarter. It only has 10 rows of data under October. None for November, and December for 2025. <br>
+Looking at the profit margin we see that profits are stable. Which were around 15 percent but then dipped as of the final quarter of 2025. 
 </div>
 <p align="center">
   <img src="images\profitMargin-by-YearandQuarter.png" alt="profit margin" width="100%">
 </p>
 <div align='center'>
- Looking at the average over value. To look into customer transaction, we see that there is stability. But there is a dip in the final year. 
+ Looking at the average over value. We see that last year was in a better position in overall average.
 <div>
 <p align="center">
   <img src="images\AOV.png" alt="AOV" width="100%">
 </p>
-<div align='center'>Looking at the average order value. We see that last year was in a better position in overall average. If u compare the final quarter of 2025 and 2024, there is a striking difference. <br>
+<div align='center'> If u compare the final quarter of 2025 and 2024, there is a striking difference. <br>
 Request 2: The "Discount Trap" Investigation (Are discounts killing us?)
  </div>
  <p align="center">
   <img src="images\discount.png" alt="dscount" width="100%">
 </p>
 <div align='center'>
-Let’s look at the profit margin and profit with discounts. Looking at the profit margin there isn’t much of striking difference between discount with 0 and 20 percent. Which is quite questionable. And looking at the sum of profit we see that as the discounts increased. The profit decreases. (I find the data questionable here as in the real word. Bad discounting can cause a massive negative losses. But in this dataset, negative profit does not exist). <br>
+Let’s look at the profit margin and profit with discounts. at the profit margin there isn’t much of striking difference between discount with 0 and 20 percent. Which is quite questionable. And looking at the sum of profit we see that as the discounts increased. The profit decreases. (I find the data questionable here as in the real word. Bad discounting can cause a massive negative losses. But in this dataset, negative profit does not exist). <br>
 Request 3: Regional & Urban Performance (Where should we expand?)
 
  </div>
@@ -102,5 +103,5 @@ Request 4: Payment Preferences (Transaction Efficiency)
   <img src="images\payment mode chart.png" alt="pie chart payment mode" width="100%">
 </p>
 <div align='center'>
-Looking at the payment mode. They are almost all identical. Comparing to real world scenario. This can be further from the truth. UPI and COD usually dominates the mode of payment. My theory is that the making of this dataset is they used Uniform Random Distribution.  
+at the payment mode. the distribution of payment mode are almost all rounding to the same value. Comparing to real world scenario. This can be further from the truth. UPI and COD usually dominates the mode of payment. My theory is that the making of this dataset is they used Uniform Random Distribution.  
 </div>
